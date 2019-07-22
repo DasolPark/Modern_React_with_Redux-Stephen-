@@ -2,11 +2,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+class App extends React.Component
+
 // Create a react component
 const App = () => {
   return (
     <div>
-      <label for="name">Enter name:</label>
+      <label className="label" for="name">
+        Enter name:
+      </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "blue", color: "white" }}>
         Submit
