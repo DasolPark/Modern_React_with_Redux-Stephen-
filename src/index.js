@@ -2,10 +2,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class App extends React.Component
+function getButtonText() {
+  return "Click Me!(function)";
+}
 
 // Create a react component
 const App = () => {
+  const buttonText = "Click Me!(Variable)";
+
   return (
     <div>
       <label className="label" for="name">
@@ -13,7 +17,8 @@ const App = () => {
       </label>
       <input id="name" type="text" />
       <button style={{ backgroundColor: "blue", color: "white" }}>
-        Submit
+        {getButtonText()}
+        {buttonText}
       </button>
     </div>
   );
